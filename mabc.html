@@ -196,8 +196,15 @@ h4{margin-top:22px;color:var(--gray-700)}
 <tr><td>채팅·자동화의 모델을 <strong>Solar Pro 4</strong> 로 지정</td><td>허용</td></tr><tr><td>그 외 모델 선택</td><td>불가</td></tr><tr><td>스킬·자동화 코드에서 <strong>외부 LLM API 호출</strong></td><td>불가</td></tr><tr><td>공공데이터·외부 서비스 API 호출 (언어 모델이 아닌 경우)</td><td>허용</td></tr>
 </tbody></table></div>
 <div class="callout callout--warn">
-<p><strong>⚠️ 제한은 선택 여부와 무관하게 적용됩니다</strong></p>
-<p>대회 스페이스에는 사용 가능한 모델과 도구가 지정되어 있습니다. <strong>모델 선택 목록이나 도구 목록에서 다른 항목을 고르더라도 실제로는 사용되지 않습니다.</strong> 목록에 표시된다는 것이 사용 가능하다는 의미가 아니므로, 과제는 허용된 범위 안에서 구성해야 합니다 (본편 2-2).</p>
+<p><strong>⚠️ 선택할 수 있다고 해서 사용할 수 있는 것은 아닙니다</strong></p>
+<p>대회 스페이스에는 사용 가능한 모델과 도구가 지정되어 있습니다. 화면에는 제품의 기본 목록이 그대로 표시되고 <strong>선택까지 되지만, 실행 시점에는 스페이스에 허용된 범위로 제한됩니다.</strong></p>
+<p>다음 세 곳 모두 해당합니다.</p>
+<ul>
+<li>채팅창 하단의 <strong>모델 선택</strong> 목록</li>
+<li>자동화 편집 화면의 <strong>모델</strong> 항목</li>
+<li>자동화 편집 화면의 <strong>사용할 도구</strong> 목록</li>
+</ul>
+<p>따라서 자동화를 만들 때 모델이나 도구를 다르게 지정해 두어도 동작은 달라지지 않습니다. <strong>목록에 보인다는 것이 사용 가능하다는 의미가 아니므로</strong>, 과제는 허용된 범위 안에서 구성해야 합니다 (본편 2-2 · 6-2 · 6-3).</p>
 </div>
 </section>
 <section id="sec4">
@@ -208,6 +215,11 @@ h4{margin-top:22px;color:var(--gray-700)}
 <tbody>
 <tr><td>영상 생성</td><td>사용 불가</td></tr><tr><td>음악 생성</td><td>사용 불가</td></tr><tr><td>음성(TTS) 생성</td><td>사용 불가</td></tr><tr><td><strong>이미지 생성</strong></td><td>1인 월 10장까지 사용 가능. 생성 시 <em>"가볍고 저렴한 모델로"</em> 를 함께 입력하면 효율적으로 사용할 수 있습니다</td></tr><tr><td>유튜브 영상 분석</td><td>사용 가능</td></tr>
 </tbody></table></div>
+<div class="callout callout--warn">
+<p><strong>⚠️ 자동화의 <code>사용할 도구</code> 에서도 동일하게 적용됩니다</strong></p>
+<p>자동화 편집 화면의 <strong>사용할 도구 → [고르기]</strong> 에는 제품이 제공하는 도구가 모두 표시되며 체크도 됩니다. 그러나 위 표에서 <strong>사용 불가</strong>로 표시된 도구는 체크하더라도 실행되지 않습니다. <code>AGENT.md</code> 의 <code>tools</code> 에 포함되어 있어도 마찬가지이며, 체크 여부와 무관하게 대회 스페이스의 제한이 우선합니다 (본편 6-3).</p>
+<p>자동화가 특정 도구를 사용하지 않는 것처럼 보인다면, 먼저 그 도구가 대회에서 허용된 도구인지 확인합니다.</p>
+</div>
 </section>
 <section id="sec5">
 <div class="section-label">PART 4</div>
